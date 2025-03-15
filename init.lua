@@ -85,6 +85,11 @@ vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
 vim.keymap.set("n", "<C-q>", "<cmd>q<CR>")
 vim.keymap.set("i", "jj", "<Esc>")
 
+vim.keymap.set("n", "<C-left>", "<cmd>vertical resize +1<CR>")
+vim.keymap.set("n", "<C-right>", "<cmd>vertical resize -1<CR>")
+vim.keymap.set("n", "<C-up>", "<cmd>resize -1<CR>")
+vim.keymap.set("n", "<C-down>", "<cmd>resize +1<CR>")
+
 -- Diagnostic keymaps
 vim.keymap.set("n", "<leader>q", vim.diagnostic.setloclist, { desc = "Open diagnostic [Q]uickfix list" })
 
